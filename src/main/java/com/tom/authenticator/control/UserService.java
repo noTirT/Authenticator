@@ -4,8 +4,8 @@ import com.tom.authenticator.entity.RegisterRequest;
 import com.tom.authenticator.entity.User;
 
 public interface UserService {
-    User findById(String id);
+    User findById(Long id);
     void createUser(User user);
     void updateUser(User user);
-    void deleteUser(String id);
+    void deleteUser(Long id);
 }

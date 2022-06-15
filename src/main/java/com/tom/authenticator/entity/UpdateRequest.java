@@ -15,15 +15,6 @@ public class UpdateRequest {
     private String email;
     private String password;
     private long birthDateTimestamp;
+    private String role;
 
-    public User toUser(){
-        return User.builder()
-                .password(this.password)
-                .birthDateTimestamp(this.birthDateTimestamp)
-                .email(this.email)
-                .firstName(this.firstName)
-                .lastName(this.lastName)
-                .username(this.username)
-                .build();
-    }
 }
